@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Weather App</title>
+  </head>
+
+  <body>
+    <form action="" class="form">
+      <div>
+        <input
+          type="text"
+          name="location"
+          id="location"
+          placeholder="Search for a location"
+        />
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="main-container">
+      <div class="error-display-container">
+        <h2 class="error-display"></h2>
+      </div>
+
+      <div class="weather-info-container">
+        <div class="toggle-system-container">
+          <button class="toggle-system-btn">°C</button>
+        </div>
+
+        <div class="main-display">
+          <h2 class="location"></h2>
+          <h1 class="temperature"></h1>
+          <h2 class="conditions"></h2>
+          <div class="min-max-temp">
+            <h2 class="min-temp"></h2>
+            <h2 class="max-temp"></h2>
+          </div>
+        </div>
+
+        <div class="hourly-forecast-container">
+          <div class="description"></div>
+          <div class="hourly-container"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
