@@ -1,3 +1,5 @@
+import "./display.css";
+
 import { mainDisplay } from "./main-display.js";
 import { hourlyDisplay } from "./hourly-diplay.js";
 import { tenDayDisplay } from "./ten-day-display.js";

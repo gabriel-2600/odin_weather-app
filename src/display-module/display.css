@@ -1,3 +1,85 @@
+.weather-info-container {
+  color: white;
+}
+
+/* Main Display */
+.main-display {
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 86px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+.min-max-temp {
+  display: flex;
+  gap: 20px;
+}
+
+/* Hourly Forecast */
+.hourly-forecast-container {
+  background: rgba(39, 39, 39, 0.228);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 20px;
+
+  margin-bottom: 50px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.description-container {
+  border-bottom: 1px solid gray;
+}
+
+.description {
+  padding: 0 10px 10px 10px;
+  font-size: 18px;
+}
+
+.hourly-container {
+  display: flex;
+  overflow: auto;
+  gap: 40px;
+  padding: 10px;
+}
+
+.hour-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* 10 Day Forecast */
+.day-forecast-container {
+  background: rgba(39, 39, 39, 0.228);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(16px);
+  border-radius: 20px;
+
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
 .weather-icon {
   height: 50px;
   width: 50px;

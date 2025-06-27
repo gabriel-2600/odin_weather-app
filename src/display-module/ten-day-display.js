@@ -1,5 +1,3 @@
-import "./display.css";
-
 import { loadWeatherIcon } from "../utility-module/utility";
 
 async function tenDayDisplay(result) {

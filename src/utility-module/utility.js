@@ -29,4 +29,23 @@ async function loadBackgroundImage(condition) {
   }
 }
 
-export { tempCategory, loadWeatherIcon, loadBackgroundImage };
+function formatTime(timeString) {
+  const [hourString] = timeString.split(":");
+  const hour = +hourString % 24;
+  return (hour % 12 || 12) + (hour < 12 ? "AM" : "PM");
+}
+
+function timeConverter(time) {
+  const [timeString] = time.split(":");
+  const formattedTime = Number(timeString);
+
+  return formattedTime;
+}
+
+export {
+  tempCategory,
+  loadWeatherIcon,
+  loadBackgroundImage,
+  formatTime,
+  timeConverter,
+};
