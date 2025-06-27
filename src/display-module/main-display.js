@@ -1,7 +1,13 @@
 // utility-module
-import { tempCategory } from "../utility-module/utility";
+import { tempCategory, loadBackgroundImage } from "../utility-module/utility";
 
-export function mainDisplay(result) {
+export async function mainDisplay(result) {
+  const body = document.body;
+  const image = await loadBackgroundImage(result.days[0].icon);
+  if (image) {
+    body.style.backgroundImage = `url(${image})`;
+  }
+
   const headerOne = document.querySelector(".location");
   headerOne.textContent = `${result.resolvedAddress}`;
 

@@ -20,3 +20,5 @@ Lessons Learned:
 Credits:
 
 - Weather Icons from [Freepik, Flaticon.com](https://www.flaticon.com/authors/freepik)
+
+- Background photos from [unplash.com](https://unsplash.com/)

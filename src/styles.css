@@ -1,8 +1,16 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+/* font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal; */
+
 /* CSS Reset */
-/* *,
+*,
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
 }
 
 * {
@@ -23,4 +31,13 @@ select {
 
 p {
   text-wrap: pretty;
-} */
+}
+
+body {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0;
+}

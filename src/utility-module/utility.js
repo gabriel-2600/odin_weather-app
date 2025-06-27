@@ -19,4 +19,14 @@ async function loadWeatherIcon(condition) {
   }
 }
 
-export { tempCategory, loadWeatherIcon };
+async function loadBackgroundImage(condition) {
+  try {
+    const image = await import(`../display-module/assets/${condition}-bg.jpg`);
+    return image.default;
+  } catch (error) {
+    console.error(`Image not found`, error);
+    return null;
+  }
+}
+
+export { tempCategory, loadWeatherIcon, loadBackgroundImage };
