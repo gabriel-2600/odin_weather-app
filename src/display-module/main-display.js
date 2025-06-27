@@ -5,7 +5,7 @@ export function mainDisplay(result) {
   const headerOne = document.querySelector(".location");
   headerOne.textContent = `${result.resolvedAddress}`;
 
-  const temperature = document.querySelector(".temperature");
+  const temperature = document.querySelector(".main-temperature");
   if (tempCategory.currentSystem === "metric") {
     temperature.textContent = `${result.days[0].temp}°C`;
   } else {

@@ -9,4 +9,14 @@ const tempCategory = {
   },
 };
 
-export { tempCategory };
+async function loadWeatherIcon(condition) {
+  try {
+    const icon = await import(`../display-module/assets/${condition}.png`);
+    return icon.default;
+  } catch (error) {
+    console.error(`Icon for condition "${condition}" not found.`, error);
+    return null;
+  }
+}
+
+export { tempCategory, loadWeatherIcon };

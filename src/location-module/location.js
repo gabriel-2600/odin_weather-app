@@ -1,3 +1,9 @@
+function retrieveLocation() {
+  return new Promise((resolve, reject) => {
+    navigator.geolocation.getCurrentPosition(resolve, reject);
+  });
+}
+
 async function getLocationDetails(latitude, longitude) {
   try {
     const response = await fetch(
@@ -23,13 +29,7 @@ async function getLocationDetails(latitude, longitude) {
   }
 }
 
-function retrieveLocation() {
-  return new Promise((resolve, reject) => {
-    navigator.geolocation.getCurrentPosition(resolve, reject);
-  });
-}
-
-async function getCity() {
+async function getCityOfUser() {
   try {
     const position = await retrieveLocation();
     const latitude = position.coords.latitude;
@@ -43,4 +43,4 @@ async function getCity() {
   }
 }
 
-export { getCity };
+export { getCityOfUser };
