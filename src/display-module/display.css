@@ -1,5 +1,11 @@
-.weather-info-container {
+.weather-info-container,
+.error-display {
   color: white;
+}
+
+.weather-icon {
+  height: 50px;
+  width: 50px;
 }
 
 /* Main Display */
@@ -39,18 +45,19 @@ h3 {
   border-radius: 20px;
 
   margin-bottom: 50px;
-  padding: 20px;
+  padding: 20px 30px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.description-container {
+.description-container,
+.ten-day-header {
   border-bottom: 1px solid gray;
+  padding-bottom: 10px;
 }
 
 .description {
-  padding: 0 10px 10px 10px;
   font-size: 18px;
 }
 
@@ -58,7 +65,6 @@ h3 {
   display: flex;
   overflow: auto;
   gap: 40px;
-  padding: 10px;
 }
 
 .hour-card {
@@ -71,16 +77,36 @@ h3 {
 
 /* 10 Day Forecast */
 .day-forecast-container {
+  width: 650px;
   background: rgba(39, 39, 39, 0.228);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(16px);
   border-radius: 20px;
 
   margin-bottom: 50px;
-  padding: 20px;
+  padding: 20px 30px;
 }
 
-.weather-icon {
-  height: 50px;
-  width: 50px;
+.day-card {
+  border-bottom: 1px solid gray;
+  padding: 8px 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.precipitation-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.day {
+  width: 90px;
+}
+
+.day-temperature {
+  width: 35px;
 }

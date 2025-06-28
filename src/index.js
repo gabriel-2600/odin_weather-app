@@ -76,9 +76,15 @@ toggleMetricBtn.addEventListener("click", (event) => {
 });
 
 async function initialDisplay() {
-  const userCurrentCity = await getCityOfUser();
+  try {
+    const userCurrentCity = await getCityOfUser();
 
-  userCurrentCity ? getWeatherData(userCurrentCity) : getWeatherData();
+    getWeatherData(userCurrentCity);
+  } catch (error) {
+    console.error("Falling back to default city: ", error.message);
+
+    getWeatherData();
+  }
 }
 
 initialDisplay();

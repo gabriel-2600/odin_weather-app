@@ -42,10 +42,31 @@ function timeConverter(time) {
   return formattedTime;
 }
 
+function getWeekDay(givenDate) {
+  const weekday = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+
+  const date = new Date(givenDate);
+  const dateToday = new Date();
+  if (dateToday.getDay() === date.getDay()) {
+    return "Today";
+  }
+
+  return weekday[date.getDay()];
+}
+
 export {
   tempCategory,
   loadWeatherIcon,
   loadBackgroundImage,
   formatTime,
   timeConverter,
+  getWeekDay,
 };

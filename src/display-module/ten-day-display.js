@@ -1,4 +1,4 @@
-import { loadWeatherIcon } from "../utility-module/utility";
+import { loadWeatherIcon, getWeekDay } from "../utility-module/utility";
 
 async function tenDayDisplay(result) {
   const tenDayContainer = document.querySelector(".ten-day-container");
@@ -10,7 +10,7 @@ async function tenDayDisplay(result) {
 
     const day = document.createElement("p");
     day.classList.add("day");
-    day.textContent = `${result.days[i].datetime}`;
+    day.textContent = `${getWeekDay(result.days[i].datetime)}`;
 
     const precipitationContainer = document.createElement("div");
     precipitationContainer.classList.add("precipitation-container");
@@ -26,14 +26,14 @@ async function tenDayDisplay(result) {
 
     const precipitation = document.createElement("p");
     precipitation.classList.add("precipitation");
-    precipitation.textContent = `${result.days[i].precipcover}%`;
+    precipitation.textContent = `${Math.round(result.days[i].precipcover / 5) * 5}%`;
 
     precipitationContainer.appendChild(weatherIcon);
     precipitationContainer.appendChild(precipitation);
 
     const dayTemperature = document.createElement("p");
     dayTemperature.classList.add("day-temperature");
-    dayTemperature.textContent = `${result.days[i].temp}°`;
+    dayTemperature.textContent = `${Math.round(result.days[i].temp)}°`;
 
     dayCard.appendChild(day);
     dayCard.appendChild(precipitationContainer);

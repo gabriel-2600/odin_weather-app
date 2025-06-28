@@ -26,6 +26,7 @@ async function getLocationDetails(latitude, longitude) {
     return city;
   } catch (error) {
     console.error(`Error fetching location: ${error.message}`);
+    throw error;
   }
 }
 
@@ -40,6 +41,7 @@ async function getCityOfUser() {
     return city;
   } catch (error) {
     console.error(error.message);
+    throw error;
   }
 }
 
