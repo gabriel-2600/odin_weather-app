@@ -20,8 +20,8 @@ Tools used:
 
 Lessons Learned:
 
-- Learned about asynchronous code, how asynchronous works in JavaScript such as promises, callbacks and Event Loop.
-- Learned about APis and fetching data from an API
+- Learned about asynchronous code and how asynchronous works in JavaScript such as promises, callbacks and Event Loop.
+- Learned about APis and fetching data from an API using fetch.
 - Utilized async/await in this project to perform asynch tasks.
 
 Credits:
