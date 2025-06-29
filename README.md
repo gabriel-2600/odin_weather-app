@@ -2,6 +2,8 @@
 
 Dynamic Weather App Webpage made for the [Project: Weather App of The Odin Project](https://www.theodinproject.com/lessons/node-path-javascript-weather-app)
 
+Live Preview:
+
 Tech Stack:
 
 - HTML
@@ -14,8 +16,13 @@ Tools used:
 - Google Chrome
 - Visual Studio Code
 - Github
+- [Visual Crossing Weather API](https://www.visualcrossing.com/weather-api/)
 
 Lessons Learned:
+
+- Learned about asynchronous code, how asynchronous works in JavaScript such as promises, callbacks and Event Loop.
+- Learned about APis and fetching data from an API
+- Utilized async/await in this project to perform asynch tasks.
 
 Credits:
 
