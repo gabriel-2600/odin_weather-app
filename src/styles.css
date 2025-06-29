@@ -45,3 +45,37 @@ body {
 .main-container {
   padding: 0 80px;
 }
+
+.form {
+  margin-bottom: 40px;
+  padding: 40px 0 0 80px;
+}
+
+.form-div {
+  display: flex;
+  gap: 10px;
+}
+
+#location {
+  padding: 8px;
+  border-radius: 8px;
+  border: 0;
+}
+
+.search-btn {
+  background: rgba(39, 39, 39, 0.851);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border: 0;
+  border-radius: 8px;
+  padding: 9px 10px;
+  color: white;
+  transition: 0.4s;
+}
+
+.search-btn:hover {
+  cursor: pointer;
+  background-color: gray;
+  transition: 0.4s;
+}

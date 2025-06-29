@@ -8,6 +8,25 @@
   width: 50px;
 }
 
+.toggle-system-btn {
+  background: rgba(39, 39, 39, 0.851);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border: 0;
+  border-radius: 4px;
+  width: 40px;
+  padding: 5px 0;
+  color: white;
+  transition: 0.4s;
+}
+
+.toggle-system-btn:hover {
+  cursor: pointer;
+  background-color: gray;
+  transition: 0.4s;
+}
+
 /* Main Display */
 .main-display {
   padding: 20px;
