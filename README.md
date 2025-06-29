@@ -2,7 +2,7 @@
 
 Dynamic Weather App Webpage made for the [Project: Weather App of The Odin Project](https://www.theodinproject.com/lessons/node-path-javascript-weather-app)
 
-Live Preview:
+Live Preview: https://gabriel-2600.github.io/odin_weather-app/
 
 Tech Stack:
 
