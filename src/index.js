@@ -4,7 +4,12 @@ import "./styles.css";
 import { getCityOfUser } from "./location-module/location.js";
 
 // display-module
-import { displayWeather, displayError } from "./display-module/display.js";
+import {
+  displayWeather,
+  displayError,
+  showLoading,
+  hideLoading,
+} from "./display-module/display.js";
 
 // utility-module
 import { tempCategory } from "./utility-module/utility.js";
@@ -15,10 +20,13 @@ const BASE_URL =
 
 async function getWeatherData(location = "Baguio", unitGroup = "metric") {
   try {
+    showLoading();
     const result = await fetchWeatherData(location, unitGroup);
     displayWeather(result);
   } catch (error) {
     displayError(error);
+  } finally {
+    hideLoading();
   }
 }
 

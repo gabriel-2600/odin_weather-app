@@ -27,4 +27,15 @@ function displayError(error) {
   weatherDisplay.style.display = "none";
 }
 
-export { displayWeather, displayError };
+const loadingIndicator = document.querySelector("#loading");
+
+function showLoading() {
+  loadingIndicator.classList.remove("hidden");
+  weatherDisplay.style.display = "none";
+}
+
+function hideLoading() {
+  loadingIndicator.classList.add("hidden");
+}
+
+export { displayWeather, displayError, showLoading, hideLoading };
