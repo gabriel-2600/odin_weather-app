@@ -9,7 +9,7 @@ const tempCategory = {
   },
 };
 
-async function loadWeatherIcon(condition) {
+async function importWeatherIcon(condition) {
   try {
     const icon = await import(`../display-module/assets/${condition}.png`);
     return icon.default;
@@ -29,20 +29,30 @@ async function loadBackgroundImage(condition) {
   }
 }
 
-function formatTime(timeString) {
+function formatTimeHourOnly(timeString) {
   const [hourString] = timeString.split(":");
   const hour = +hourString % 24;
-  return (hour % 12 || 12) + (hour < 12 ? "AM" : "PM");
+  return `${hour % 12 || 12}${hour < 12 ? "AM" : "PM"}`;
 }
 
-function timeConverter(time) {
+function formatTimeHourAndMinute(timeString) {
+  if (!timeString) {
+    return "N/A";
+  }
+
+  const [hourString, minuteString] = timeString.split(":");
+  const hour = +hourString % 24;
+  return `${hour % 12 || 12}:${minuteString}${hour < 12 ? "AM" : "PM"}`;
+}
+
+function convertTo24Hour(time) {
   const [timeString] = time.split(":");
   const formattedTime = Number(timeString);
 
   return formattedTime;
 }
 
-function getWeekDay(givenDate) {
+function getDayOfTheWeek(givenDate) {
   const weekday = [
     "Sunday",
     "Monday",
@@ -64,9 +74,10 @@ function getWeekDay(givenDate) {
 
 export {
   tempCategory,
-  loadWeatherIcon,
+  importWeatherIcon,
   loadBackgroundImage,
-  formatTime,
-  timeConverter,
-  getWeekDay,
+  formatTimeHourOnly,
+  formatTimeHourAndMinute,
+  convertTo24Hour,
+  getDayOfTheWeek,
 };

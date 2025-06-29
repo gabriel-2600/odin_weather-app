@@ -17,8 +17,6 @@ async function getWeatherData(location = "Baguio", unitGroup = "metric") {
   try {
     const result = await fetchWeatherData(location, unitGroup);
     displayWeather(result);
-
-    console.log(result);
   } catch (error) {
     displayError(error);
   }

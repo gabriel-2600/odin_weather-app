@@ -77,7 +77,6 @@ h3 {
 
 /* 10 Day Forecast */
 .day-forecast-container {
-  width: 650px;
   background: rgba(39, 39, 39, 0.228);
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(16px);
@@ -90,17 +89,17 @@ h3 {
 .day-card {
   border-bottom: 1px solid gray;
   padding: 8px 0;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.precipitation-container {
+.day-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 75px;
 }
 
 .day {

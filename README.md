@@ -19,6 +19,6 @@ Lessons Learned:
 
 Credits:
 
-- Weather Icons from [Freepik, Flaticon.com](https://www.flaticon.com/authors/freepik)
+- Weather Icons from [Freepik, Flaticon.com](https://www.flaticon.com/authors/freepik) and [Icon Hubs, Flaticon.com](https://www.flaticon.com/authors/icon-hubs)
 
 - Background photos from [unplash.com](https://unsplash.com/)
