@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="84bb4fc080631c2605f1.css" />
+
+    <title>Weather App</title>
+  <script defer src="main.js"></script></head>
+
+  <body>
+    <form class="form">
+      <div class="form-div">
+        <div>
+          <input
+            type="text"
+            name="location"
+            id="location"
+            placeholder="Search for a location"
+            required
+          />
+        </div>
+        <button type="submit" class="search-btn">Search</button>
+      </div>
+    </form>
+
+    <div class="main-container">
+      <div id="loading" class="spinner hidden"></div>
+
+      <div class="error-display-container">
+        <h2 class="error-display"></h2>
+      </div>
+
+      <div class="weather-info-container">
+        <div class="toggle-system-container">
+          <button class="toggle-system-btn">°C</button>
+        </div>
+
+        <div class="main-display">
+          <h2 class="location"></h2>
+          <h1 class="main-temperature"></h1>
+          <h3 class="conditions"></h3>
+          <div class="min-max-temp">
+            <h3 class="min-temp"></h3>
+            <h3 class="max-temp"></h3>
+          </div>
+        </div>
+
+        <div class="hourly-forecast-container">
+          <div class="description-container">
+            <p class="description"></p>
+          </div>
+          <div class="hourly-container"></div>
+        </div>
+
+        <div class="day-forecast-container">
+          <div class="ten-day-header-container">
+            <p class="ten-day-header">10 Day Forecast</p>
+          </div>
+
+          <div class="ten-day-container"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
