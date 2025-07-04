@@ -65,7 +65,8 @@ function getDayOfTheWeek(givenDate) {
 
   const date = new Date(givenDate);
   const dateToday = new Date();
-  if (dateToday.getDay() === date.getDay()) {
+
+  if (dateToday.getDate() === date.getDate()) {
     return "Today";
   }
 
